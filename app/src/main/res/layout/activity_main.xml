@@ -13,5 +13,131 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Enter Symbol: "
+        android:layout_alignBottom="@+id/info"
+        android:id="@+id/enterSymbolTextView"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:text="Symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/symbolTextView"
+        android:layout_below="@+id/info"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/symbolTextView"
+        android:layout_alignLeft="@id/info"
+        android:id="@+id/output1" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameTextView"
+        android:layout_alignLeft="@id/info"
+        android:id="@+id/output2" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tradePriceTextView"
+        android:layout_alignLeft="@id/info"
+        android:id="@+id/output3" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tradeTimeTextView"
+        android:layout_alignLeft="@id/info"
+        android:id="@+id/output4" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/changeTextView"
+        android:layout_alignLeft="@id/info"
+        android:id="@+id/output5" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weekTextView"
+        android:layout_alignLeft="@id/info"
+        android:id="@+id/output6" />
+
+    <TextView
+        android:text="Trade Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tradePriceTextView"
+        android:layout_below="@+id/nameTextView"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTextView"
+        android:layout_below="@+id/symbolTextView"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text="Trade Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tradeTimeTextView"
+        android:layout_below="@+id/tradePriceTextView"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text="Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeTextView"
+        android:layout_below="@+id/tradeTimeTextView"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:text="Range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weekTextView"
+        android:layout_below="@+id/changeTextView"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:text="Get Info"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/getInfo"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:hint=""
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
